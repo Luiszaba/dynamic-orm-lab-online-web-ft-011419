@@ -35,7 +35,7 @@ end
   end
   
   def col_names_for_insert
-    self.class.column_names.delete_if {|columns| columns.name == id.name}
+    self.class.column_names.delete_if {|columns| columns == id.join(" , ")}
   end
   
   
