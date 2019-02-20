@@ -5,6 +5,6 @@ class InteractiveRecord
   
   
   def self.table_name
-    "self.#{to_s.pluralize}"
+    "self.class.#{to_s.pluralize}"
 end
 end
