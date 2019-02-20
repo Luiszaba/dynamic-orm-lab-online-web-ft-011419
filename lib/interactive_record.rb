@@ -5,9 +5,7 @@ class InteractiveRecord
   
   
   def self.table_name
-    "#{self.to_s.downcase}s"
-    
-    # create table'_'name -> symbol, dwncase, and pluralize using inflector
+    "#{self.to_s.downcase.pluralize}"
   end
   
   def self.column_names
@@ -18,8 +16,6 @@ class InteractiveRecord
     column_names = []
     table_info.each {|row| column_names << row["name"]}
     column_names.compact
-    
-    # create column'_'names via sql command.  Utilize the table in the previous method, and insert row with the title "name"
   end
   
   def initialize(options={})
