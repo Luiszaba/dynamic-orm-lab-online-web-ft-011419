@@ -30,10 +30,12 @@ end
 
   def table_name_for_insert
     self.class.table_name
+    
+    # this will become the basis for inserting a table name, by using the table_name method
   end
   
   def col_names_for_insert
-    self.class.column_names
+    self.class.column_names if 
   end
   
   
