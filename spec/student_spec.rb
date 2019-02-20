@@ -13,7 +13,7 @@ describe Student do
     SQL
 
     DB[:conn].execute(sql)
-    DB[:conn].results_as_hash = true
+    DB[:conn].results_as_hash = false
   end
 
   let(:attributes) {
