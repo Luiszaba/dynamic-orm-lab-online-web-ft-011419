@@ -30,7 +30,7 @@ end
 
   def save 
     sql =<<-SQL
-    SELECT * FROM students 
+    INSERT INTO students (name)
 
 
 
