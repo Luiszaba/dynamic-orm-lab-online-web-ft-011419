@@ -28,7 +28,9 @@ class InteractiveRecord
   end
 end
 
-  #def 
+  def save 
+    sql =<<-SQL
+    SELECT * FROM students 
 
 
 
