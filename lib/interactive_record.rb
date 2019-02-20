@@ -28,6 +28,15 @@ class InteractiveRecord
   end
 end
 
+  def table_name
+    self.class.table_name
+  end
+  
+  def col_names
+    self.class.col_name
+  end
+  
+  
   def save 
     sql = ("INSERT INTO #{table_name_for_insert} (#{col_names_for_insert}) VALUES (#{values_for_insert})")
     
