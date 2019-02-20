@@ -35,7 +35,20 @@ end
     SQL
     
     DB[:conn].execute(sql)
-    @id = ("SELECT last_insert_rowid() FROM #{table_name_for_insert")[0][0][0]
+    @id = ("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0][0]
+  end
+  
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
