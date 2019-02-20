@@ -21,3 +21,4 @@ class InteractiveRecord
       self.send("#{pr}=", v)
   end
 end
+end
