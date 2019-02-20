@@ -35,7 +35,7 @@ end
     SQL
     
     DB[:conn].execute(sql)
-    @id = 
+    @id = ("SELECT last_insert_rowid()")
 
 
 
