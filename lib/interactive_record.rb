@@ -23,8 +23,8 @@ class InteractiveRecord
   end
   
   def initialize(options={})
-    options.each do |pr, v|
-      self.send("#{pr}=", v)
+    options.each do |property, value|
+      self.send("#{property}=", value)
       
     # initialize the class with an empty hash.  This hash will have a key of properties and its values.  We can then iterate through the k,v with k being the properties so the hash  
   end
