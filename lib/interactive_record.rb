@@ -17,7 +17,8 @@ class InteractiveRecord
   end
   
   def initiaize(options={})
-    
+    options.each do |property, values|
+      property
     
 end
 end
