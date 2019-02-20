@@ -33,7 +33,7 @@ end
     INSERT INTO students #{table_name_for_insert} (#{col_names_for_insert}) VALUES  (#{values_for_insert})
     SQL
     DB[:conn].execute(sql)
-    @id = ("SELECT last_insert_rowid() FROM #{table_name_for_insert}")[0][0][0]
+    @id = ("SELECT last_insert_rowid() FROM (#{table_name_for_insert})")[0][0][0]
     
     # to save our sql inserts we need to create
   end
