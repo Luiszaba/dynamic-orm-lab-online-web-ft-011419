@@ -12,4 +12,4 @@ sql = <<-SQL
 SQL
 
 DB[:conn].execute(sql)
-DB[:conn].results_as_hash = false
+DB[:conn].results_as_hash = true
