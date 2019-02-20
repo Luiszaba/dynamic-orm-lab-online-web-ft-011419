@@ -45,6 +45,8 @@ end
        self.class.column_names.each do |column|
     to_insert << "'#{send(column)}'" unless send(column).nil?
     
+    
+    # to set up our values for insertion, we need to first create where we will place our values.  []
     end
     to_insert.join(", ")
   end
@@ -57,12 +59,4 @@ end
     
     # to save our sql inserts we need to create
   end
-  
-  
-
-
-
-
-
-
 end
