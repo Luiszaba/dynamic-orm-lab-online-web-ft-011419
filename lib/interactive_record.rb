@@ -34,7 +34,8 @@ end
     VALUES  #{values_for_insert}
     SQL
     
-    
+    DB[:conn].execute(sql)
+    @id = 
 
 
 
