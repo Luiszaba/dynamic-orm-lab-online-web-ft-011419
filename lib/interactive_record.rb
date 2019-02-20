@@ -42,7 +42,11 @@ end
   
   def values_for_insert
     to_insert = []
-    
+       self.class.column_names.each do |column|
+    to_insert << "'#{send(column)}'" unless send(column).nil?
+    end
+    to_insert.join(", ")
+  end
 
   
   def save 
