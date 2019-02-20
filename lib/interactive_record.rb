@@ -37,6 +37,8 @@ end
   def col_names_for_insert
     self.class.column_names.delete_if {|columns| columns == id.join(", ")}
   end
+  # this method will be the basis for inserting column names into our db.  The column will not be inserted if it already has an ID and deleted to prevent replications
+end
   
   
   def save 
