@@ -41,6 +41,8 @@ end
   end
   
   def values_for_insert
+    to_insert = []
+    
 
   
   def save 
