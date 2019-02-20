@@ -67,10 +67,8 @@ end
     DB[:conn].execute(sql)
   end
   
-  def self.find_by(attribute_hash)
-    value = attribute_hash.values.first
-    formatted_value = value.class == Fixnum ? value : "'#{value}'"
-    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute_hash.keys.first} = #{formatted_value}"
+  def self.find_by(attribute)
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys[0].to_s} = #{attribute.values[0].to_s}"
     DB[:conn].execute(sql)
   end
 end
