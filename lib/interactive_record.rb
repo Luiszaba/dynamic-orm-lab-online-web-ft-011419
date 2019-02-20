@@ -30,7 +30,7 @@ end
 
   def save 
     sql =<<-SQL
-    INSERT INTO students #{table_name_for_insert) (#{col_names_for_insert})
+    INSERT INTO students #{table_name_for_insert} (#{col_names_for_insert})
     VALUES  (#{values_for_insert})
     SQL
     
