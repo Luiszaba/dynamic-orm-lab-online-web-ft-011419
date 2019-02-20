@@ -46,7 +46,7 @@ end
     to_insert << "'#{send(column)}'" unless send(column).nil?
     
     
-    # to set up our values for insertion, we need to first create where we will place our values.  I created an empty array called [to_insert].  Since we have our column_names method, lets take use of it.  We will iterate over the column_names and place those values in our new array.  
+    # to set up our values for insertion, we need to first create where we will place our values.  I created an empty array called [to_insert].  Since we have our column_names method, lets take use of it.  We will iterate over the column_names and place those values in our new array.    We will NOT insert the column if its empty, this will create empty columns and we do not want that.
     end
     to_insert.join(", ")
     
