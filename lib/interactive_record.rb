@@ -46,9 +46,11 @@ end
     to_insert << "'#{send(column)}'" unless send(column).nil?
     
     
-    # to set up our values for insertion, we need to first create where we will place our values.  []
+    # to set up our values for insertion, we need to first create where we will place our values.  I created an empty array called [to_insert].  Since we have our column_names method, lets take use of it.  We will iterate over the column_names and place those values in our new array.  
     end
     to_insert.join(", ")
+    
+    # we need to remove the spacing, and none usable characters via .join(", ")  Now our array can be used without issues
   end
 
   def save 
