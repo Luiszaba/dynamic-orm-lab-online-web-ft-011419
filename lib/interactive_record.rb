@@ -40,7 +40,7 @@ end
     # this method will be the basis for inserting column names into our db. The column will not be inserted if it already has an ID and deleted to prevent replications
   end
   
-  def 
+  def values_for_insert
 
   
   def save 
