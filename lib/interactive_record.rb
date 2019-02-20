@@ -5,7 +5,7 @@ class InteractiveRecord
   
   
   def self.table_name
-    "#{self.to_s.downcase.pluralize}"
+    "#{self.to_s.downcase}s"
     
     # create table'_'name -> symbol, dwncase, and pluralize using inflector
   end
