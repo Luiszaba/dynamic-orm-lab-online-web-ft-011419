@@ -20,5 +20,11 @@ class InteractiveRecord
     options.each do |pr, v|
       self.send("#{pr}=", v)
   end
-end
+  
+  def 
+  
+  
+  end
+
+
 end
